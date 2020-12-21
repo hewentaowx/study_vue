@@ -1,6 +1,6 @@
 /* eslint-disable vue/return-in-computed-property */
 <template>
-  <div class="hello">
+  <div class="parent">
     <h1>{{ msg }}</h1>
     <button class="btn" @click="getNum">{{num}}</button>
     <ul>
@@ -61,12 +61,20 @@
     <div v-else>
       <h2>暂无数据</h2>
     </div>
+
+    <children title="hhhhh" date="2020-12-21">
+    <div>
+    </div>
+  </children>
   </div>
+
 </template>
 
 <script>
+import Children from '@/components/Children'
+
 export default {
-  name: 'HelloWorld',
+  name: 'Parent',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
@@ -124,6 +132,9 @@ export default {
       let allPrice = this.books.reduce((a, c) => a += (c.price * c.count), 0)
       return allPrice
     }
+  },
+  components: {
+    Children
   }
 }
 </script>
