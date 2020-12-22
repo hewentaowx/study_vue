@@ -66,26 +66,6 @@
     <div>
     </div>
   </children>
-
-  <h3>新写的表格</h3>
-  <table>
-    <thead>
-      <th></th>
-      <th>Java</th>
-      <th>Python</th>
-      <th>Go</th>
-      <th>Nodejs</th>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>Java比Python好</td>
-        <td>Python比Go好</td>
-        <td>Go比Nodejs好</td>
-        <td>Nodejs最难找工作</td>
-      </tr>
-    </tbody>
-  </table>
   </div>
 
 </template>
